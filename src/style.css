@@ -56,6 +56,7 @@ nav {
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
+    position: relative;
 }
 
 .card-title{
@@ -81,6 +82,15 @@ nav {
     font-weight: bold;
 }
 
+.card--badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+}
 
 
 
