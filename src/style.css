@@ -42,10 +42,25 @@ nav {
     margin-left: 3%;
 }
 
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}
+
 .card {
-    width: 175px;
+    width: 225px;
     font-size: 12px;
     margin-left: 3%;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+}
+
+.card-title{
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card-img{
@@ -65,5 +80,7 @@ nav {
 .bold {
     font-weight: bold;
 }
+
+
 
 
