@@ -1,21 +1,21 @@
 import React from "react";
-import cardImg from "../Images/mclaren.jpg"
+// import cardImg from "../Images/mclaren.jpg"
 
-function Card() {
+function Card(props) {
     return(
         <div className="card">
             <img className="card-img" 
             alt="card-img" 
-            src={cardImg}
+            src={props.img}
               />
             <div className="card-stats">
             <i class="fa-solid fa-star card-star"></i>
-            <span>5.0</span>
-            <span className="gray">(6) </span>
-            <span className="gray">-{'>'}USA</span>
+            <span>{props.rating}</span>
+            <span className="gray">({props.reviewCount}) </span>
+            <span className="gray">-{'>'} {props.country}</span>
             </div>
-            <p>Life Lesson with Mclern</p>
-            <p><span className="bold">From $2B</span> / car</p>
+            <p>{props.title}</p>
+            <p><span className="bold">From ${props.price}</span> / car</p>
         </div>
     )
 }
